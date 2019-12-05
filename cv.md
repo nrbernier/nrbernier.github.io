@@ -8,4 +8,5 @@ actions:
     url: "assets/cv/cv.pdf"
 ---
 
+{% include cv-pdf.html %}
 
