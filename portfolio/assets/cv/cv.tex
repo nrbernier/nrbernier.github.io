@@ -1,0 +1,200 @@
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e]{cvtemplate}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+\usepackage[]{tkz-kiviat} 
+\usetikzlibrary{arrows.meta,
+                chains,
+                positioning}
+\usepackage[]{hyperref} 
+\usepackage[]{textcomp} 
+
+% Change the colours if you want to
+\definecolor{Brownred}{HTML}{a83c09}
+%\definecolor{Brownred}{HTML}{8c000f}
+%\definecolor{Brownred}{HTML}{a03623}
+%\definecolor{Brownred}{HTML}{b04e0f}
+
+\definecolor{Mulberry}{HTML}{72243D}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+
+%\colorlet{heading}{Sepia}
+%\colorlet{heading}{Brownred!180}
+%\colorlet{heading}{black}
+\colorlet{heading}{SlateGrey}
+\colorlet{accent}{Brownred!120}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+%\addbibresource{sample.bib}
+
+\begin{document}
+\name{Nathan Bernier}
+\tagline{Physicist and aspiring Data Scientist}
+\photo{2.8cm}{../images/Photo}
+%\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  %\email{\href{mailto:nathan.bernier@alumni.epfl.ch}{nathan.bernier@alumni.epfl.ch}}
+  %\phone{+41 79 580 87 49}
+  %\location{Ch.\ de Passerose 6, 1006 Lausanne, Switzerland}
+  %
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+  % \orcid{orcid.org/0000-0000-0000-0000}
+%}
+
+%% Make the header extend all the way to the right, if you want.
+%\begin{fullwidth}
+\makecvheader
+\medskip
+%\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\newcommand{\epfl}{\href{http://www.epfl.ch/}{EPFL
+(Swiss Federal Institute of Technology Lausanne)}}
+\newcommand{\lpqm}{\href{https://k-lab.epfl.ch/}{Laboratory of Quantum Measurements and Photonics}}
+
+\bigskip
+\cvsection[cv_sidebar]{Experience}
+\timelineperiods{
+    2019/{% Postdoc
+        \cvevent{Postdoctoral Researcher}%
+        {\epfl}{6 months}{}
+        %\lpqm
+        \begin{itemize}
+            \item{Coordination of the research effort within a small team} 
+            \item{Mentoring of the junior researchers}
+            \item{%Creation of a m
+                Module to fit models to data by Bayesian inference}
+        \end{itemize}
+    },
+    2014/
+    {% PhD
+        \cvevent{Research Assistant}{\epfl}
+        %{4 years 7 months}{}
+        %{4\textonehalf~years}{}
+        {4.5 years}{}
+        %\lpqm \\
+        %Superconducting 
+        Cryogenic
+        microwave circuits
+        (Quantum technologies)
+        \smallskip
+        \begin{itemize}
+            \item{Experimental results leading to 7 scientific publications
+                including one as first author in Nature Physics}
+            \item{Development of an original theoretical model 
+                confirmed by experiment}
+            %\item{Data analysis and visualization for scientific communications}
+            %\item{Building of a wiki website for the experiment on the group server}
+            \item{
+                    %Teaching assistant for several courses, including 
+                    Sole teaching assistant for a course on Quantum Optics; 
+            substitute for the lecturer on advanced statistics}
+            %\item{Main teaching assistant for a course on Quantum Optics,
+            %    coaching the students to participate in the IBM Q Experience competition}
+        \end{itemize}
+    },
+    2013/
+    {% BU
+        \cvevent{Teaching Assistant}
+        {\href{http://www.bu.edu/}{Boston University}}
+        {2 semesters}{}
+        \begin{itemize}
+            \item{Several laboratory classes for General Physics}
+            \item{Laboratory setup 
+            for a new course on Food Science}
+        \end{itemize}
+    }
+   % 2011/
+   % {% MJF
+   %     \cvevent{Staff Clerk}
+   %     {\href{http://www.montreuxjazz.com/2011/en}{Montreux Jazz Festival}}
+   %     {4 editions}{}
+   %     \begin{itemize} 
+   %         \item{Distribution of wages and food vouchers}
+   %     \end{itemize}
+   % }
+}
+
+\bigskip
+
+\cvsection{Education}
+\timelineevents{
+    2019/{% PhD
+        \cvevent{PhD in Physics}{\epfl}{}{}
+        Relevant coursework:\\
+        Applied machine learning for scientists 
+        (sklearn, keras),
+        Statistics for physicists (Bayesian inference, with R)
+    },
+    2013/
+    {% Master and bachelor
+        \cvevent{MSc \& BSc in Physics}{\epfl}{}{}
+        \begin{itemize}
+            \item{Master project  at%
+                \nameofplace{%
+                \href{http://www.harvard.edu/}{Harvard University}},
+            leading to article}
+            \item{ EPFL \href{https://www.epfl.ch/education/studies/en/financing-study/grants/excellence-fellowships/}
+  {Excellence Fellowship} in 2011 and 2012}
+            \item{Best average in graduating BSc class (71 students)}
+            \item{Exchange year at%
+                \nameofplace{%
+                \href{http://www.cmu.edu/index.shtml}{Carnegie Mellon University}}
+                %($4.00/4.00$ GPA)
+            }
+            \item{Student assistant for Analytical Mechanics
+            and Introduction to Computer Science (C++)}
+        \end{itemize}
+    }
+}
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+\end{document}
