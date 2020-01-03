@@ -17,6 +17,7 @@ lang: en-US
 title: Nathan Bernier
 email:
 description: 
+repository: nrbernier/nrbernier.github.io
 baseurl: #/portfolio # the optional subpath of your site, e.g. "/blog"
 url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author:
@@ -95,3 +96,4 @@ defaults:
     values:
       layout: post
       read_time: false
+      include-date: false
