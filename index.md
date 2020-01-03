@@ -2,7 +2,7 @@
 layout: home
 paginate: true
 alt_title: "Nathan Bernier"
-sub_title: "Physicist with a love for photography and a keen curiosity for data"
+sub_title: "Physicist with a love of photography and a keen curiosity for data"
 image: /assets/photos/gypaetus_barbatus.jpg
 introduction: |
 
