@@ -12,7 +12,7 @@ wine reviews to try and extract
 all information that can help us guess what
 the score of the wine will be.
 The original jupyter notebook can be found
-at the [github page](https://github.com/nrbernier/wine-reviews).
+on the [github page](https://github.com/nrbernier/wine-reviews).
 
 {% include_relative wine_reviews.html %}
 
