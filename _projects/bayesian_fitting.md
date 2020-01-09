@@ -3,8 +3,8 @@ title: Model fitting with Bayes
 tags:
     - Project
 image: 
-    path: /assets/photos/dzo_laddakh.jpg
-    thumbnail: /assets/photos/dzo_laddakh_small.jpg
+    path: /assets/photos/dzo_ladakh.jpg
+    thumbnail: /assets/photos/dzo_ladakh_small.jpg
 
 ---
 Here is presented a python module
