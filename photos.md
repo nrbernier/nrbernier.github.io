@@ -15,6 +15,9 @@ description="Boston Skyline" %}
 {% include image.html file="dzo_ladakh.jpg" 
 description="Dzo (cow-yak hybrid) in Ladakh" %}
 
+{% include image.html file="speyside.jpg" 
+description="Blooming gorse in Speyside, Scotland" %}
+
 {% include image.html file="midnight_sun_reykjavik.jpg" 
 description="Midnight sun in Reykjavik" %}
 
