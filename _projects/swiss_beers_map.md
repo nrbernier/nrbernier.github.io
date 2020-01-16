@@ -14,8 +14,8 @@ available on
 The original jupyter notebook can be found
 on the [github page](https://github.com/nrbernier/swiss-beer-map).
 
-Note that it is work in progress and there are still a few error
-in localizations of the breweries.
+Note that it is work in progress and there might be errors 
+in the localizations.
 
 {% include_relative swiss-breweries-map.html %}
 
