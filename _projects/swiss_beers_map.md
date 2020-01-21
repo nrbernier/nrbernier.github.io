@@ -21,6 +21,11 @@ The size of the markers is proportional to the number of beers
 listed on BeerAdvocate,
 while the color gives the average ratings of them.
 
+Below is a graph representing 6087 Swiss beers
+as a function of their average ratings and their alcohol content.
+
+{% include_relative swiss-beers-scatter.html %}
+
 As a quick summary, 
 first a list of 576 Swiss breweries is extracted from
 [this RateBeer page](https://www.ratebeer.com/breweries/switzerland/0/191/).
