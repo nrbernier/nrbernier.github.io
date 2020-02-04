@@ -67,8 +67,7 @@
 \begin{document}
 \name{Nathan Bernier}
 \tagline{Physicist and aspiring Data Scientist}
-\photo{2.8cm}{../images/Photo}
-%\personalinfo{%
+\personalinfo{%
   % Not all of these are required!
   % You can add your own with \printinfo{symbol}{detail}
   %\email{\href{mailto:nathan.bernier@alumni.epfl.ch}{nathan.bernier@alumni.epfl.ch}}
@@ -77,12 +76,14 @@
   %
   %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
   % \orcid{orcid.org/0000-0000-0000-0000}
-%}
+    %Data Science projects: 
+    %{\color{accent}\href{https://nrbernier.github.io/}{nrbernier.github.io}} 
+}
+\photo{2.8cm}{../images/Photo}
 
 %% Make the header extend all the way to the right, if you want.
 %\begin{fullwidth}
 \makecvheader
-\medskip
 %\end{fullwidth}
 
 %% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
@@ -96,9 +97,23 @@
 (Swiss Federal Institute of Technology Lausanne)}}
 \newcommand{\lpqm}{\href{https://k-lab.epfl.ch/}{Laboratory of Quantum Measurements and Photonics}}
 
-\bigskip
+\medskip
 \cvsection[cv_sidebar]{Experience}
 \timelineperiods{
+    {2020}/{% Personal projects
+        \cvevent{Data Science Projects in Freelance}%
+        {Personal Website: \href{https://nrbernier.github.io/}{nrbernier.github.io}}
+        {}{}
+        %\lpqm
+        \begin{itemize}
+            \item{
+                \href{https://nrbernier.github.io/projects/swiss_beers_map/}
+            {Interactive map} of Swiss breweries from web scraping} 
+            \item{
+                \href{https://nrbernier.github.io/projects/wine_reviews/}
+                {Predicting  wine-review scores} with machine learning}
+        \end{itemize}
+    },
     2019/{% Postdoc
         \cvevent{Postdoctoral Researcher}%
         {\epfl}{6 months}{}
@@ -107,7 +122,7 @@
             \item{Coordination of the research effort within a small team} 
             \item{Mentoring of the junior researchers}
             \item{%Creation of a m
-                Module to fit models to data by Bayesian inference}
+                Module to model data by Bayesian inference}
         \end{itemize}
     },
     2014/
@@ -117,17 +132,19 @@
         %{4\textonehalf~years}{}
         {4.5 years}{}
         %\lpqm \\
-        %Superconducting 
-        Cryogenic
+        Design and signal processing of
+        superconducting 
+        %Cryogenic
         microwave circuits
         (Quantum technologies)
         \smallskip
         \begin{itemize}
-            \item{Experimental results leading to 7 scientific publications
-                including one as first author in Nature Physics}
+        \item{Responsible for data analysis and visualization in Python}
+        %for scientific communications}
+            %\item{Experimental results leading to 7 scientific publications
+            %    including one as first author in Nature Physics}
             \item{Development of an original theoretical model 
                 confirmed by experiment}
-            %\item{Data analysis and visualization for scientific communications}
             %\item{Building of a wiki website for the experiment on the group server}
             \item{
                     %Teaching assistant for several courses, including 
@@ -136,18 +153,18 @@
             %\item{Main teaching assistant for a course on Quantum Optics,
             %    coaching the students to participate in the IBM Q Experience competition}
         \end{itemize}
-    },
-    2013/
-    {% BU
-        \cvevent{Teaching Assistant}
-        {\href{http://www.bu.edu/}{Boston University}}
-        {2 semesters}{}
-        \begin{itemize}
-            \item{Several laboratory classes for General Physics}
-            \item{Laboratory setup 
-            for a new course on Food Science}
-        \end{itemize}
     }
+    %2013/
+    %{% BU
+    %    \cvevent{Teaching Assistant}
+    %    {\href{http://www.bu.edu/}{Boston University}}
+    %    {2 semesters}{}
+    %    \begin{itemize}
+    %        \item{Several laboratory classes for General Physics}
+    %        \item{Laboratory setup 
+    %        for a new course on Food Science}
+    %    \end{itemize}
+    %}
    % 2011/
    % {% MJF
    %     \cvevent{Staff Clerk}

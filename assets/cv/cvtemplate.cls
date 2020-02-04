@@ -167,10 +167,11 @@
     %\ifdef{\@photodiameter}{\begin{minipage}{\dimexpr\linewidth-\@photodiameter-2em}}{}%
     \raggedright\color{emphasis}%
     {\Huge\bfseries\MakeUppercase{\@name}\par}
-    \medskip
-    {\large\bfseries\color{accent}\@tagline\par}
-    \ifdef{\@personalinfo}{\medskip%
-        {\footnotesize\bfseries\@personalinfo\par}
+    \medskip 
+    {\Large\bfseries\color{accent}\@tagline\par}
+    \ifdef{\@personalinfo}{\bigskip%
+       % {\bfseries\@personalinfo\par}
+        {\large\bfseries\@personalinfo}
     }
     %\ifdef{\@photodiameter}{%
     %\end{minipage}\hfill%
@@ -180,9 +181,11 @@
     %  \includegraphics[width=\@photodiameter]{\@photo}
     %\else
       %\tikz\path[fill overzoom image={\@photo}]circle[radius=0.5\dimexpr\@photodiameter-2em];
+
     \marginpar{
         %\vspace*{\dimexpr1pt-\baselineskip}
-        \vspace*{-1.5cm}
+        %\vspace*{-3cm}
+        \vspace*{-2.8cm}
         \centering
     \tikz\path[fill overzoom image={\@photo}]circle
     %[radius=0.5\dimexpr\@photodiameter-2em];
