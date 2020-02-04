@@ -18,7 +18,7 @@ on the [github page](https://github.com/nrbernier/swiss-beer-map).
 {% include_relative swiss-breweries-map.html %}
 
 The size of the markers is proportional to the number of beers
-listed on BeerAdvocate,
+of each brewery,
 while the color gives the average ratings of them.
 
 Below is a graph representing 6087 Swiss beers
